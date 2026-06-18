@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte - Futuro Sustentável</title>
+
+<style>
+:root{
+    --musgo:#4F6F52;
+    --floresta:#1B4332;
+    --preto:#0a0a0a;
+    --branco:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:var(--preto);
+    color:var(--branco);
+}
+
+/* NAV */
+nav{
+    position:sticky;
+    top:0;
+    background:var(--floresta);
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(120deg, var(--floresta), var(--musgo));
+    padding:120px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.6rem;
+    max-width:900px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* SEÇÕES GRANDES */
+section{
+    padding:100px 20px;
+}
+
+.dark{
+    background:var(--preto);
+}
+
+.musgo{
+    background:var(--musgo);
+}
+
+.floresta{
+    background:var(--floresta);
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+/* TEXTOS GRANDES */
+h2{
+    font-size:3rem;
+    margin-bottom:25px;
+}
+
+p{
+    font-size:1.4rem;
+    line-height:1.8;
+}
+
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    margin-top:40px;
+}
+
+.card{
+    background:rgba(0,0,0,0.4);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card .content{
+    padding:20px;
+}
+
+.card h3{
+    font-size:1.6rem;
+    margin-bottom:10px;
+}
+
+/* LISTA */
+ul{
+    margin-top:20px;
+    font-size:1.4rem;
+    line-height:2;
+}
+
+li::before{
+    content:"🌿 ";
+}
+
+/* SOLUÇÕES */
+.solutions{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-top:40px;
+}
+
+.box{
+    background:rgba(0,0,0,0.4);
+    padding:25px;
+    border-radius:12px;
+    border-left:6px solid white;
+}
+
+.box h3{
+    font-size:1.8rem;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    background:var(--floresta);
+    font-size:1.2rem;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#culturas">Culturas</a>
+    <a href="#solucoes">Soluções</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>AGRO FORTE</h1>
+    <p>
+        Um futuro sustentável nasce no campo. A agricultura moderna precisa unir tecnologia,
+        respeito à natureza e produção eficiente para alimentar o mundo sem destruir o planeta.
+    </p>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre" class="dark">
+<div class="container">
+    <h2>O que é o Agro Sustentável?</h2>
+    <p>
+        O agro sustentável é um modelo de produção agrícola que busca equilíbrio entre produtividade e preservação ambiental.
+        Ele utiliza tecnologias modernas, reduz o desperdício de recursos naturais e promove o uso consciente do solo, da água e da energia.
+        O objetivo é simples e essencial: produzir mais, com menos impacto ambiental e mais responsabilidade social.
+    </p>
+</div>
+</section>
+
+<!-- TECNOLOGIA -->
+<section id="tecnologia" class="musgo">
+<div class="container">
+    <h2>Tecnologia no Campo</h2>
+    <p>
+        A tecnologia está transformando o campo em um ambiente inteligente, preciso e altamente produtivo.
+        Isso permite decisões mais rápidas e sustentáveis.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1602524816970-3b1a0b1c1f15">
+            <div class="content">
+                <h3>Drones Agrícolas</h3>
+                <p>Monitoramento de plantações em tempo real com alta precisão.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff">
+            <div class="content">
+                <h3>Irrigação Inteligente</h3>
+                <p>Uso eficiente da água com sensores automatizados.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449">
+            <div class="content">
+                <h3>Máquinas Modernas</h3>
+                <p>Redução de emissão de carbono e maior produtividade.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- CULTURAS -->
+<section id="culturas" class="dark">
+<div class="container">
+    <h2>Culturas Sustentáveis</h2>
+    <p>
+        A produção agrícola sustentável envolve práticas que preservam o solo e aumentam a biodiversidade.
+    </p>
+
+    <ul>
+        <li>Soja com redução de agrotóxicos</li>
+        <li>Milho com rotação de culturas</li>
+        <li>Agroflorestas integradas</li>
+        <li>Café cultivado com sombra natural</li>
+        <li>Hortas orgânicas locais</li>
+    </ul>
+</div>
+</section>
+
+<!-- SOLUÇÕES -->
+<section id="solucoes" class="floresta">
+<div class="container">
+    <h2>Soluções e Impactos</h2>
+    <p>
+        Estas soluções estão moldando o futuro da agricultura global.
+    </p>
+
+    <div class="solutions">
+
+        <div class="box">
+            <h3>Agricultura de Precisão</h3>
+            <p>
+                Reduz desperdícios e aumenta a eficiência da produção agrícola,
+                gerando até 30% mais produtividade com menor impacto ambiental.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>Gestão Inteligente da Água</h3>
+            <p>
+                Sistemas automatizados ajudam a economizar água e preservar recursos naturais essenciais.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>Reflorestamento</h3>
+            <p>
+                Recupera áreas degradadas e aumenta a biodiversidade do solo e dos ecossistemas.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>Energia Renovável</h3>
+            <p>
+                O uso de energia solar e eólica reduz emissões de carbono no campo.
+            </p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<footer>
+    AGRO FORTE • FUTURO SUSTENTÁVEL • PROJETO PARA GITHUB
+</footer>
+
+</body>
+</html>
